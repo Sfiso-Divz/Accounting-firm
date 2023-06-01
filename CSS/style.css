@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------- Globals ----------------------- */
+
+/* COLORS */
+    :root{
+        --primary-background:#0892d0;
+        --button-background:#0047ab;
+    }
+/* END COLORS */
+
+/* Other */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* END Other */
+
+/* --------------------- End of Globals ----------------------- */
+
+/* --------------------- Navigation ----------------------- */
+
+nav{
+    background-color:#0892d0 ;
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid wheat;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: white;
+}
+
+.logo a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.quote{
+    font-family: 'Poppins';
+    color: white;
+    background-color: #0047ab;
+    padding:10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.quote a{
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: #222;
+}
+
+/* --------------------- END of Navigation ----------------------- */
+
+
+/* --------------------- HERO Section ------------------------------*/
+
+.Hero{
+    width: 100%;
+    height: 60vh;
+    background-color: #0892d0;
+}
+.hero-container{
+    padding: 0 6%;
+    position: relative;
+}
+
+.hero-container h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 60px;
+    padding-top: 5rem;
+}
+
+.hero-container span{
+    height: 2px;
+    width: 15px;
+    color: white;
+}
+
+.title-line{
+    width: 150px;
+    background-color: white;
+    height: 5px;
+    border: none;
+}
+.title-line1{
+    width: 130px;
+    background-color: white;
+    height: 5px;
+    border: none;
+}
+.title-line2{
+    width: 100px;
+    background-color: white;
+    height: 5px;
+    border: none;
+}
+
+.get-quote-box{
+    width: 350px;
+    height:360px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5rem;
+    color: white;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    background-color: white;
+    border-radius:5px ;
+}
+
+form{
+    margin: 0 auto;
+    color: white;
+}
+.get-quote-box input{
+    width: 250px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Poppins';
+    margin-left: 2rem;
+    margin-top: 25px;
+    border-bottom: 1px solid #888;
+  
+}
+
+.get-quote-box textarea{
+    margin-top: 10rem;
+    width: 280px;
+    height: 150px;
+    background-color: transparent;
+    color: #222;
+    border: 1px solid var(--primary-background);
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1.5rem;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.get-quote-box button{
+    margin-top: 14rem;
+    margin-left: 7rem;
+    padding: 5px 15px;
+    /* border-radius: 5px; */
+    background-color: var(--button-background);
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: white;
+    border: none;
+
+}
+
+
+/* --------------------- END HERO Section ------------------------------*/
+
+/* --------------------- Services Section --------------------------------- */
+.services{
+    width: 100%;
+    height: 100vh;
+}
+
+.services h1{
+    text-align: center;
+    font-size: 35px;
+    color: #222;
+    padding-top: 3rem;
+    letter-spacing: 0.25em;
+    font-weight: 900;
+    font-family: 'Poppins';
+    margin-bottom: 1rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 2rem 6%;
+    padding-bottom: 1rem;
+    
+}
+
+.service-info{
+    border: 1px solid #0892d0;
+    padding: 1rem ;
+    background-color: var(--primary-background);
+    border-radius: 5px;
+}
+
+.service-info h2{
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #222;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.service-info img{
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
+.service-info p{
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+   font-size: 12px;
+}
+.service-info a{
+    text-align: center;
+    background-color: var(--button-background);
+    /* border-radius: 5px; */
+    padding: 10px 20px;
+    font-size: 10px;
+    margin-left: 5rem;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 1rem;
+
+}
+
+
+
+/* --------------------- END Services Section --------------------------------- */
