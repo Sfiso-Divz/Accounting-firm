@@ -100,7 +100,7 @@ nav ul li a:hover{
 
 .Hero{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: #0892d0;
 }
 .hero-container{
@@ -143,7 +143,7 @@ nav ul li a:hover{
 
 .get-quote-box{
     width: 350px;
-    height:360px;
+    height:370px;
     position: absolute;
     right: 0;
     top: 0;
@@ -153,6 +153,8 @@ nav ul li a:hover{
     margin-right: 5rem;
     background-color: white;
     border-radius:5px ;
+    padding-top: 15px;
+    border-bottom-left-radius: 50px;
 }
 
 form{
@@ -163,16 +165,16 @@ form{
     width: 250px;
     outline: none;
     border: none;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Poppins';
     margin-left: 2rem;
-    margin-top: 25px;
+    margin-top: 30px;
     border-bottom: 1px solid #888;
   
 }
 
 .get-quote-box textarea{
-    margin-top: 10rem;
+    margin-top: 9rem;
     width: 280px;
     height: 150px;
     background-color: transparent;
@@ -185,13 +187,13 @@ form{
     left: 0;
     margin-left: 1.5rem;
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .get-quote-box button{
-    margin-top: 14rem;
+    margin-top: 13rem;
     margin-left: 7rem;
-    padding: 5px 15px;
+    padding: 10px 15px;
     /* border-radius: 5px; */
     background-color: var(--button-background);
     font-family: 'Poppins';
