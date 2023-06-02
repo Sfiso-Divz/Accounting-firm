@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Ubuntu:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&family=Poppins:wght@200;300&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Poppins:wght@200;300&family=Ubuntu:wght@300;400&display=swap');
 
 *{
     margin: 0;
@@ -221,7 +222,7 @@ form{
     padding-top: 3rem;
     /* letter-spacing: 0.25em; */
     font-weight: 600;
-    font-family: 'Geologica';
+    font-family: 'Monserrat',sans-serif;
     margin-bottom: 1rem;
 }
 
@@ -276,9 +277,50 @@ form{
 }
 
 .services span{
-    border-bottom: 2px #222;
+    border-bottom: 4px solid #222;
 }
 
+
+/* --------------------------------- more ------------------------------- */
+.more-info{
+    margin-top: 29rem;
+    display: flex;
+    padding: 0 6%;
+    margin-bottom: -25rem;
+
+}
+
+.more-info img{
+    width: 500px;
+    padding-right:5rem;
+}
+
+.more-info h2{
+    color: #222;
+    font-family: 'Poppins';
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+.more-info p{
+    font-family: 'Poppins';
+    color: #222;
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
+
+.more-info button{
+    padding: 10px 25px;
+    color: white;
+    background-color: var(--button-background);
+    font-family: 'Poppins';
+    border: none;
+}
+
+.more-info button i{
+    padding-top: 10px;
+    font-weight: 600;
+}
 
 /* --------------------- END Services Section --------------------------------- */
 
@@ -307,7 +349,7 @@ footer{
 .grid2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 130px;
+    gap: 110px;
    
 }
 
@@ -342,5 +384,9 @@ footer{
     font-size: 15px;
     margin-left: 26rem;
     padding-bottom: 1rem;
+}
+
+.email p{
+    font-size: 12px;
 }
 /* ----------------------------------- END Footer --------------------------------------- */
