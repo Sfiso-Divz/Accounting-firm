@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&family=Poppins:wght@200;300&family=Ubuntu:wght@300;400&display=swap');
 
 *{
     margin: 0;
@@ -38,6 +39,7 @@ nav{
     display: flex;
     justify-content: space-between;
     z-index: 2;
+    border-top-left-radius: 50px;
 }
 
 nav ul{
@@ -45,7 +47,7 @@ nav ul{
 }
 
 nav ul li a{
-    padding: 0 10px;
+    padding: 0 20px;
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 15px;
@@ -152,7 +154,7 @@ nav ul li a:hover{
     margin-top: 2rem;
     margin-right: 5rem;
     background-color: white;
-    border-radius:5px ;
+    /* border-radius:5px ; */
     padding-top: 15px;
     border-bottom-left-radius: 50px;
 }
@@ -217,15 +219,15 @@ form{
     font-size: 35px;
     color: #222;
     padding-top: 3rem;
-    letter-spacing: 0.25em;
-    font-weight: 900;
-    font-family: 'Poppins';
+    /* letter-spacing: 0.25em; */
+    font-weight: 600;
+    font-family: 'Geologica';
     margin-bottom: 1rem;
 }
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 2rem 6%;
     padding-bottom: 1rem;
@@ -233,31 +235,31 @@ form{
 }
 
 .service-info{
-    border: 1px solid #0892d0;
     padding: 1rem ;
-    background-color: var(--primary-background);
-    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.314);
+    border-radius: 15px;
+    padding-bottom: 2rem;
 }
 
 .service-info h2{
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 20px;
     color: #222;
     padding-bottom: 1rem;
     text-align: center;
-    color: white;
-    font-weight: 600;
+    color: #222;
+    font-weight: bold;
 }
 
 .service-info img{
-    width: 250px;
+    width: 100%;
     padding-bottom: 1rem;
 }
 
 .service-info p{
     margin-bottom: 2rem;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: #222;
    font-size: 12px;
 }
 .service-info a{
@@ -266,13 +268,79 @@ form{
     /* border-radius: 5px; */
     padding: 10px 20px;
     font-size: 10px;
-    margin-left: 5rem;
+    margin-left: 8rem;
     color: white;
     font-family: 'Poppins',sans-serif;
     margin-bottom: 1rem;
 
 }
 
+.services span{
+    border-bottom: 2px #222;
+}
 
 
 /* --------------------- END Services Section --------------------------------- */
+
+/* ----------------------------------- Footer ------------------------------------------- */
+
+footer{
+    background-color: var(--primary-background);
+    padding: 2rem 10%;
+    display: flex;
+    margin-top: 30rem;
+    height: 40vh;
+    position: relative;
+    border-bottom-right-radius: 50px;
+}
+
+.footer-ul{
+    margin-top: 2rem;
+}
+
+.footer-ul a{
+   font-family: 'Poppins', sans-serif;
+   font-size: 15px;
+   color: white;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 130px;
+   
+}
+
+.address p{
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins';
+    margin-top: 1rem;
+}
+
+.footer-info h2{
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: white;
+    margin-bottom: -1.1rem;
+    margin-top: 0.5rem;
+}
+
+.footer-info .logo a{
+    font-size: 25px;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-left: 26rem;
+    padding-bottom: 1rem;
+}
+/* ----------------------------------- END Footer --------------------------------------- */
