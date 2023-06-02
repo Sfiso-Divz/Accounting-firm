@@ -53,7 +53,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    border-bottom: 2px solid wheat;
+    border-bottom: 2px solid orangered;
 }
 
 .active {
